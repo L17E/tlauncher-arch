@@ -41,15 +41,20 @@ remove() {
   [[ "${KEEP_DOTDIR,,}" = "n" ]] && rm -rf "$HOME/.tlauncher"
 }
 
+play() {
+  java -jar /usr/share/tlauncher/tlauncher.jar
+}
+
 
 case "$1" in
   -u|--update|update)
     update ; exit ;;
   -r|--remove|remove)
     remove ; exit ;;
+  -h|--help|help)
+    usage ; exit ;;
   *)
-    usage  ; exit ;;
+    play  ; exit ;;
 esac
 
 
-java -jar /usr/share/tlauncher/tlauncher.jar
