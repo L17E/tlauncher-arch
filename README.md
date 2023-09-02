@@ -5,7 +5,7 @@ This is a repo that i made to install TLauncher on Arch Linux directly from thei
 
 1. Clone and enter the repo
     ```c 
-    git clone https://github.com/MatheusTT/tlauncher-arch.git && cd tlauncher-arch
+    git clone https://github.com/L17E/tlauncher-arch.git && cd tlauncher-arch
     ```
 2. Change the permissions of the script
     ```c 
@@ -15,10 +15,6 @@ This is a repo that i made to install TLauncher on Arch Linux directly from thei
     ```c
     ./install.sh
     ```
-## Or you can simply do this:
-```c
-wget https://pastebin.com/raw/TUgwsQdx -O - | tr -d '\r' | sh
-```
 
 ## Usage
 After the installation, you can just type `tlauncher` in the terminal to launch tlauncher.
